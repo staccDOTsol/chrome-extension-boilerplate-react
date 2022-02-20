@@ -16,7 +16,6 @@ const App = ({ Component, pageProps }) => {
   return (
     <Providers>
       <Header />
-      //@ts-ignore
 
       <Component {...pageProps} />
     </Providers>
