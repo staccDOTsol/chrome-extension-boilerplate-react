@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+#/build
 
 # misc
 .DS_Store
@@ -19,3 +19,4 @@
 
 # secrets
 secrets.*.js
+node_modules
