@@ -5,13 +5,17 @@ import { Header } from "../components/Header";
 import { Providers } from "../components/Providers";
 
 // Use require instead of import since order matters
+//@ts-ignore
 require("@solana/wallet-adapter-react-ui/styles.css");
+//@ts-ignore
 require("../../styles/globals.css");
-
-let App: FC<AppProps> = ({ Component, pageProps }) => {
+//@ts-ignore
+const App = ({ Component, pageProps: any }) => {
   return (
     <Providers>
       <Header />
+      //@ts-ignore
+
       <Component {...pageProps} />
     </Providers>
   );
