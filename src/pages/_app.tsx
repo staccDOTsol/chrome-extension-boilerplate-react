@@ -10,7 +10,7 @@ import { Providers } from "../components/Providers";
 //@ts-ignore
 require("@solana/wallet-adapter-react-ui/styles.css");
 //@ts-ignore
-require("../../styles/globals.css");
+require("../styles/globals.css");
 //@ts-ignore
 const App = ({ Component, pageProps }) => {
   return (
