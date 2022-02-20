@@ -16,7 +16,6 @@ module.exports = {
       type: "javascript/auto",
     });
 
-    );
     config.module.rules.push(
       {
         test: /\.(ts|js)x?$/,
