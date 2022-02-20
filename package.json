@@ -37,6 +37,7 @@
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
   "dependencies": {
+"ts-loader": "*",
     "@chakra-ui/react": "^1.8.1",
     "@hot-loader/react-dom": "^17.0.2",
     "@metaplex-foundation/mpl-token-metadata": "^1.1.0",
