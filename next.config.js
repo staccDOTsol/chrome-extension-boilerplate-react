@@ -23,8 +23,8 @@ module.exports = {
     }
 
     );
-    config.module.rules.push({
-    {
+    config.module.rules.push(
+      {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
