@@ -10,7 +10,7 @@ require("@solana/wallet-adapter-react-ui/styles.css");
 //@ts-ignore
 require("../../styles/globals.css");
 //@ts-ignore
-const App = ({ Component, pageProps: any }) => {
+const App = ({ Component, pageProps }) => {
   return (
     <Providers>
       <Header />
