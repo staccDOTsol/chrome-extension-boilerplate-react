@@ -8,7 +8,7 @@ import { Providers } from "../components/Providers";
 require("@solana/wallet-adapter-react-ui/styles.css");
 require("../../styles/globals.css");
 
-const App: FC<AppProps> = ({ Component, pageProps }) => {
+let App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <Providers>
       <Header />
