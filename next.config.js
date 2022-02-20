@@ -15,12 +15,6 @@ module.exports = {
       include: /node_modules/,
       type: "javascript/auto",
     });
-    config.module.rules.push({
-      test: /\.(ts|tsx)$/,
-      loader: 'ts-loader',
-      // include: [path.resolve(__dirname, 'yourAppPath')],
-      exclude: [/node_modules/, /bower_components/],
-    }
 
     );
     config.module.rules.push(
