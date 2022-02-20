@@ -23,7 +23,7 @@
   },
   "scripts": {
     "prestart": "npm-link-shared ../common/node_modules/ . react",
-    "start2": "next dev",
+    "start": "next dev",
     "build2": "next build",
     "export": "next export -o ./build/web",
     "start:prod": "next start",
@@ -37,7 +37,10 @@
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
   "dependencies": {
-"ts-loader": "*",
+    "ts-loader": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*",
+    "@babel/preset-typescript": "*",
     "@chakra-ui/react": "^1.8.1",
     "@hot-loader/react-dom": "^17.0.2",
     "@metaplex-foundation/mpl-token-metadata": "^1.1.0",

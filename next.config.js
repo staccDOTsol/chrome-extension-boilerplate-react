@@ -21,8 +21,25 @@ module.exports = {
       // include: [path.resolve(__dirname, 'yourAppPath')],
       exclude: [/node_modules/, /bower_components/],
     }
-    );
 
+    );
+    config.module.rules.push({
+    {
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              "@babel/preset-env",
+              "@babel/preset-react",
+              "@babel/preset-typescript",
+            ],
+          },
+        },
+      }
+
+    );
     config.resolve.alias = {
       ...config.resolve.alias,
       "@solana/wallet-adapter-react": path.resolve(
